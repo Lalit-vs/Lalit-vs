@@ -46,10 +46,10 @@ app.use(function(req, res, next) {
 });
 
 //Include all routes
-const adminRouter = require("./router/admin");
+//const adminRouter = require("./router/admin");
 const frontendRouter = require("./router/frontend");
 //app.use( adminRouter );
-//app.use( frontendRouter );
+app.use( frontendRouter );
 
 
 module.exports = app;
